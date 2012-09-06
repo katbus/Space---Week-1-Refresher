@@ -11,6 +11,7 @@ class enemy{
   }//end of setup
   
   void draw(){
+    translate(20,20);
     image(star,xpos,ypos);
     ypos++;
     

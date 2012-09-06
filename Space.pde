@@ -15,14 +15,14 @@ void setup(){
   star = loadImage("star.png");
     for(int i = 0; i<enemyArray.length;i++){
       enemyArray[i] = new enemy(random(0,300),random(-500,1));
-}
-}
+    }//for
+}//setup
 
 void draw(){
   background(0,60,40);
   ourPlayer.draw();
     for(int i = 0; i<enemyArray.length;i++){
     enemyArray[i].draw();
-    }
+    }//end for
   
-}
+}//draw

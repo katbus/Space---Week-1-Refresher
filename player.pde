@@ -14,7 +14,9 @@ class player{
   }//end player
   
   void draw(){
+    pushMatrix();
     image(earth,xpos,ypos);
+    popMatrix();
     if(keyPressed){
       if(key=='RIGHT'){
         ourPlayer.xpos-=ourPlayer.speed;
